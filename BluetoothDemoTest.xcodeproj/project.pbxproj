@@ -11,6 +11,15 @@
 		BC16178E25C8D079005E50D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16178D25C8D079005E50D5 /* ContentView.swift */; };
 		BC16179025C8D07B005E50D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC16178F25C8D07B005E50D5 /* Assets.xcassets */; };
 		BC16179325C8D07B005E50D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC16179225C8D07B005E50D5 /* Preview Assets.xcassets */; };
+		BC16179E25C8D0C3005E50D5 /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC16179D25C8D0C3005E50D5 /* Bluetooth.swift */; };
+		BC1617A325C8D292005E50D5 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617A225C8D292005E50D5 /* Store.swift */; };
+		BC1617A725C8D32D005E50D5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617A625C8D32D005E50D5 /* AppState.swift */; };
+		BC1617AA25C8D364005E50D5 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617A925C8D364005E50D5 /* AppError.swift */; };
+		BC1617AD25C8DA28005E50D5 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617AC25C8DA28005E50D5 /* DataParser.swift */; };
+		BC1617B025C8DFE3005E50D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617AF25C8DFE3005E50D5 /* Extensions.swift */; };
+		BC1617B325C8FC7B005E50D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617B225C8FC7B005E50D5 /* HomeView.swift */; };
+		BC1617BD25C9015F005E50D5 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617BC25C9015F005E50D5 /* DeviceView.swift */; };
+		BC1617C025C9016D005E50D5 /* WaveChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1617BF25C9016D005E50D5 /* WaveChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		BC16178F25C8D07B005E50D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC16179225C8D07B005E50D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC16179425C8D07B005E50D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC16179D25C8D0C3005E50D5 /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		BC1617A225C8D292005E50D5 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BC1617A625C8D32D005E50D5 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BC1617A925C8D364005E50D5 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BC1617AC25C8DA28005E50D5 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
+		BC1617AF25C8DFE3005E50D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BC1617B225C8FC7B005E50D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BC1617BC25C9015F005E50D5 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		BC1617BF25C9016D005E50D5 /* WaveChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,9 @@
 		BC16178A25C8D079005E50D5 /* BluetoothDemoTest */ = {
 			isa = PBXGroup;
 			children = (
+				BC1617A125C8D250005E50D5 /* Handle */,
+				BC16179C25C8D0AC005E50D5 /* View */,
+				BC16179B25C8D09F005E50D5 /* Utils */,
 				BC16178B25C8D079005E50D5 /* BluetoothDemoTestApp.swift */,
 				BC16178D25C8D079005E50D5 /* ContentView.swift */,
 				BC16178F25C8D07B005E50D5 /* Assets.xcassets */,
@@ -67,6 +88,36 @@
 				BC16179225C8D07B005E50D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC16179B25C8D09F005E50D5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC16179D25C8D0C3005E50D5 /* Bluetooth.swift */,
+				BC1617AC25C8DA28005E50D5 /* DataParser.swift */,
+				BC1617AF25C8DFE3005E50D5 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC16179C25C8D0AC005E50D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC1617B225C8FC7B005E50D5 /* HomeView.swift */,
+				BC1617BC25C9015F005E50D5 /* DeviceView.swift */,
+				BC1617BF25C9016D005E50D5 /* WaveChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC1617A125C8D250005E50D5 /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				BC1617A225C8D292005E50D5 /* Store.swift */,
+				BC1617A625C8D32D005E50D5 /* AppState.swift */,
+				BC1617A925C8D364005E50D5 /* AppError.swift */,
+			);
+			path = Handle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +189,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1617B325C8FC7B005E50D5 /* HomeView.swift in Sources */,
+				BC1617C025C9016D005E50D5 /* WaveChartView.swift in Sources */,
 				BC16178E25C8D079005E50D5 /* ContentView.swift in Sources */,
+				BC1617BD25C9015F005E50D5 /* DeviceView.swift in Sources */,
+				BC1617A725C8D32D005E50D5 /* AppState.swift in Sources */,
+				BC1617AA25C8D364005E50D5 /* AppError.swift in Sources */,
+				BC1617B025C8DFE3005E50D5 /* Extensions.swift in Sources */,
+				BC16179E25C8D0C3005E50D5 /* Bluetooth.swift in Sources */,
 				BC16178C25C8D079005E50D5 /* BluetoothDemoTestApp.swift in Sources */,
+				BC1617AD25C8DA28005E50D5 /* DataParser.swift in Sources */,
+				BC1617A325C8D292005E50D5 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
